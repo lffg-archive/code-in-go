@@ -5,9 +5,13 @@ import (
 	"math"
 )
 
+func print(num int, sqr int) {
+	fmt.Printf("The square root of %d is %d!", num, sqr)
+}
+
 func main() {
 	num := 64
-	sqr := int(math.Sqrt(float64(num)))
+	sqr := math.Sqrt(float64(num))
 
-	fmt.Printf("The square root of %d is %d!\n", num, sqr)
+	print(num, int(sqr))
 }
