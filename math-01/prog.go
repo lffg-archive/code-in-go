@@ -7,6 +7,7 @@ import (
 
 func print(num int, sqr int) {
 	fmt.Printf("The square root of %d is %d!", num, sqr)
+	fmt.Print("\n")
 }
 
 func main() {
