@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// Creates a "person" struct:
 type person struct {
 	name     string
 	lastName string
@@ -9,11 +10,13 @@ type person struct {
 	gender   string
 }
 
+// Attaches a method to the person struct:
 func (p person) fullName() string {
 	return fmt.Sprintf("%s %s", p.name, p.lastName)
 }
 
 func main() {
+	// Creates a new instance of the person struct:
 	luiz := person{
 		name:     "Luiz",
 		lastName: "Felipe",
