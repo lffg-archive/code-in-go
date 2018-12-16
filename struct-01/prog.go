@@ -9,6 +9,10 @@ type person struct {
 	gender   string
 }
 
+func (p person) fullName() string {
+	return fmt.Sprintf("%s %s", p.name, p.lastName)
+}
+
 func main() {
 	luiz := person{
 		name:     "Luiz",
@@ -17,5 +21,5 @@ func main() {
 		age:      16,
 	}
 
-	fmt.Printf("Hello! My name is %s %s!\n", luiz.name, luiz.lastName)
+	fmt.Printf("Hello! My name is %s!\n", luiz.fullName())
 }
